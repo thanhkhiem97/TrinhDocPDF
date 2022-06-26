@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/icon_view"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                tools:src="@drawable/ic_outline_picture_as_pdf_24" />
+
+            <TextView
+                android:id="@+id/file_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/img_dautrang"
+                android:layout_toEndOf="@id/icon_view"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:text="Documents" />
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/file_name_text_view"
+                android:layout_toStartOf="@+id/img_dautrang"
+                android:layout_toEndOf="@id/icon_view"
+                android:textColor="@color/black"
+                tools:text="Documents" />
+
+            <ImageView
+                android:id="@+id/img_dautrang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/img_thongtin"
+                android:visibility="visible"
+                tools:src="@drawable/ic_outline_turned_in_not_24" />
+
+            <ImageView
+                android:id="@+id/img_thongtin"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:visibility="visible"
+                tools:src="@drawable/ic_ellipsis_vertical" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

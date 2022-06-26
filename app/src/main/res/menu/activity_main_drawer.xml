@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_outline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_chude"
+            android:icon="@drawable/ic_outline_bedtime_24"
+            android:title="@string/menu_chude" />
+        <item
+            android:id="@+id/nav_ngongu"
+            android:icon="@drawable/ic_baseline_translate_24"
+            android:title="@string/menu_ngongu" />
+        <item
+            android:id="@+id/nav_banxemtruoc"
+            android:icon="@drawable/ic_outline_text_snippet_24"
+            android:title="@string/menu_banxemtruoc" />
+    </group>
+
+</menu>

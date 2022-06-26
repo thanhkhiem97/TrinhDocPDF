@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <FrameLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/md_red_700"
+            tools:ignore="MissingConstraints">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_outline_view_headline_24" />
+
+                <ImageView
+                    android:id="@+id/action_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_outline_filter_alt_24" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_baseline_search_24"
+                    android:text="Search PDF"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            style="@style/CustomTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@color/md_red_700">
+
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:id="@+id/tabAll"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/all" />-->
+
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:id="@+id/tabPdf"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="PDF" />-->
+
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:id="@+id/tabWodf"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="WORD" />-->
+
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:id="@+id/tabExe"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="EXCEL" />-->
+
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:id="@+id/tabPower"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="PPT" />-->
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:bb_activeTabColor="@color/md_red_700"
+        app:bb_inActiveTabAlpha="0.8"
+        app:bb_inActiveTabColor="@color/gray1"
+        app:bb_showShadow="true"
+        app:bb_tabXmlResource="@xml/bottom_navigation_main"
+        app:bb_titleTextAppearance="@style/CustomTitleTextAppearance" />
+</RelativeLayout>

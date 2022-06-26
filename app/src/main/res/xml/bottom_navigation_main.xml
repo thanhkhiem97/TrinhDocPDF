@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/ic_outline_sticky_note_2_24_"
+        id="@+id/action_home"
+        title="@string/bot_catailieu" />
+    <tab
+        icon="@drawable/ic_outline_access_time_24"
+        id="@+id/action_ganday"
+        title="@string/bot_ganday" />
+    <tab
+        icon="@drawable/ic_outline_turned_in_not_24"
+        id="@+id/action_dautrang"
+        title="@string/bot_dautrang" />
+
+</tabs>

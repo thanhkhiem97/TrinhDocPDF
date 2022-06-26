@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TrinhDocPDF</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Trang chủ</string>
+    <string name="menu_chude">Chủ đề ứng dụng</string>
+    <string name="menu_ngongu">Chọn ngôn ngữ</string>
+    <string name="menu_banxemtruoc">Bản xem trước</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Trình đọc PDF</string>
+    <string name="nav_header_subtitle">Sắp xếp tất cả các loại tệp tại một nơi</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="bot_catailieu">Các tài liệu</string>
+    <string name="bot_ganday">Gần đây</string>
+    <string name="bot_dautrang">Dấu trang</string>
+    <string name="all">Tất cả</string>
+    <string name="text_add_to_bookmark">Thêm vào dấu trang</string>
+    <string name="text_rename_file">Đổi tên tập tin</string>
+    <string name="chiasethumuc">Chia sẻ thư mục</string>
+    <string name="xoadulieu">Xóa dữ liệu</string>
+    <string name="duongtat">Đường tắt</string>
+    <string name="thongtin">Thông tin</string>
+    <string name="text_rename">Đổi tên</string>
+    <string name="text_close">Đóng</string>
+    <string name="text_added_bookmars">Đã thêm vào dấu trang</string>
+    <string name="text_remove_from_bookmark">Xóa khỏi Dấu trang</string>
+    <string name="text_removed_bookmars">Đã xóa khỏi dấu trang</string>
+
+    <string name="text_ok">đồng ý</string>
+    <string name="title">Tiêu đề</string>
+    <string name="info">Thông tin</string>
+    <string name="file_type">Loại tệp</string>
+    <string name="path">Đường dẫn</string>
+    <string name="text_sort_size">Kích thước</string>
+    <string name="last_modified">Sửa đổi lần cuối</string>
+    <string name="text_cancel">Huỷ bỏ</string>
+    <string name="text_continous_pages">Các trang liên tục</string>
+    <string name="text_dark_mode">Chế độ tối</string>
+    <string name="text_delete">Xóa bỏ</string>
+    <string name="text_delete_error">Đã xảy ra lỗi khi xóa tệp</string>
+    <string name="text_delete_file">Xóa tài liệu</string>
+    <string name="text_delete_file_confirmation">Bạn có chắc chắn muốn xóa tệp này không?</string>
+    <string name="text_delete_success">Đã xóa tệp thành công</string>
+</resources>

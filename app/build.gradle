@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.khiempt.trinhdocpdf"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '3.14.7'
+    implementation 'com.github.davidpizarro:pickerui:1.0.1'
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation "com.jakewharton:butterknife:${butterKnifeVersion}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${butterKnifeVersion}"
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'org.jetbrains:annotations:15.0'
+    implementation 'org.jetbrains:annotations:15.0'
+    implementation 'android.arch.lifecycle:livedata:1.1.1'
+    implementation 'com.roughike:bottom-bar:2.3.1'
+    implementation 'android.arch.lifecycle:viewmodel:1.1.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha01'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
+    implementation 'com.google.android.material:material:1.1.0-alpha04'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/basic_rounded_corners">
+    <item
+        android:id="@+id/action_dautrang"
+        android:orderInCategory="100"
+        android:title="@string/text_add_to_bookmark"
+        />
+    <item
+        android:id="@+id/action_rename"
+        android:orderInCategory="100"
+        android:title="@string/text_rename_file"
+        />
+    <item
+        android:id="@+id/action_chiase"
+        android:orderInCategory="100"
+        android:title="@string/chiasethumuc"
+        />
+    <item
+        android:id="@+id/action_xoatailieu"
+        android:orderInCategory="100"
+        android:title="@string/xoadulieu"
+        />
+    <item
+        android:id="@+id/action_duongtat"
+        android:orderInCategory="100"
+        android:title="@string/duongtat"
+        />
+    <item
+        android:id="@+id/action_info"
+        android:orderInCategory="100"
+        android:title="@string/thongtin"
+        />
+</menu>
